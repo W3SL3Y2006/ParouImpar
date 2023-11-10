@@ -34,9 +34,9 @@ cursor: pointer;
 }
 
 #botao-jogar {
-    background-color:rgb(243, 13, 13);(231, 8, 8);
-    color:white;
-    border: 1x solid;
+    background-color: rgb(243, 13, 13);
+    color: white;
+    border: 1px solid white;
 }
 
 .caixa-jogar {
@@ -57,4 +57,17 @@ cursor: pointer;
     margin: 2rem 0;
     display: none;
     
+}
+
+.desabiitado {
+    color: grey;
+    border: 2px solid gray;
+    cursor: default;
+}
+
+.selecionado {
+    color: yellow;
+    border: 2px solid white;
+    background-color: blue;
+
 }
