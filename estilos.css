@@ -69,5 +69,12 @@ cursor: pointer;
     color: yellow;
     border: 2px solid white;
     background-color: blue;
+}
 
+.mensagem {
+    font-size: 3rem;
+}
+
+.centralizado {
+    text-align: center;
 }
