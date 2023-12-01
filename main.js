@@ -70,9 +70,15 @@ function jogarParOuImpar () {
     escolherNumeroComputador()
     var nomeVencedor = verificarVencedor()   
 
-    console.log("Par ou Impar? " + parOuImpar)
-    console.log(" Usuário escolheu: " + numeroUsuario)
-    console.log(" Computador escolheu: " + numeroComputador)
-    console.log("Vencedor: " + nomeVencedor)
+
+    resultado.innerHTML += "<br>Par ou Impar? " + parOuImparEscolhido
+    resultado.innerHTML += "<br>Usuário escolheu: " + numeroUsuario
+    resultado.innerHTML += "<br>Computador escolheu: " + numeroComputador
+    nomeVencedor == "Usuário" ? frase="Parabéns! Voce venceu!" : frase= "Que pena Voce perdeu!"
+    resultado.innerHTML += "<br>" + frase
+
+
+
+   
 }
 
