@@ -82,3 +82,27 @@ function jogarParOuImpar () {
 
 }
 
+function tirarSelecao(){
+    for(i = 0; i <=5; i++) {
+    document.getElementById('b' + i).classList.remove('selecionado')
+    }
+}
+
+function habilitarBotoes() {
+    for (i = 0; i <= 5; i++) {
+        document.getElementById('b' + i).removeAttribute('disabled')
+        document.getElementById('b' + i).classList.remove('desabilitado')
+    }
+}
+
+function jogarNovamente () {
+    parOuImpar = -1
+    numeroUsuario = -1
+    tirarSelecao()
+    painel1.style.display = 'block'
+    botaojogar.style.display = 'block'
+    botaojogarnovamente.style.display = 'none'
+    resultado.innerHTML = ""
+    resultado.style.display = 'none'
+    habilitarBotoes()
+}
